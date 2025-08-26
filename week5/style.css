@@ -1,0 +1,60 @@
+.card{
+    width: 25%;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(198, 221, 231);
+    
+}
+
+.card:hover{
+    box-shadow: 10px 10px 5px grey;
+    transition: 0.3s;
+    cursor: pointer;
+   
+}
+
+.card-header {
+    border-bottom: 5px solid;
+    border-bottom: 100px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;    
+    gap: 8px;  
+    
+}
+.card-header span:last-child{
+    font-weight: bold;
+    font-size: 2rem;
+    
+}
+.main{
+    display: flex;
+    gap: 20px;
+}
+.btn{
+    border:none;
+    background-color: rgb(3, 8, 24);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 100px;
+}
+.btn:hover{
+    background-color: rgb(141, 141, 216);
+    cursor: pointer;
+}
+.card-header {
+  position: relative; /* Needed for absolute positioning of the line */
+  padding-bottom: 10px; /* Create space for the line below the text */
+}
+
+.card-header::after {
+  content: "";
+  position: absolute;
+  left: 0; /* Align the line to the left */
+  bottom: 0; /* Position the line at the bottom of the header */
+  width: 100%; /* Adjust the width of the line as needed */
+  height: 2px; /* Adjust the thickness of the line as needed */
+  background-color: #0000fd; /* Adjust the color of the line as needed */
+}
+
+
