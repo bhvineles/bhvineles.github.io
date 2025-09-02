@@ -1,0 +1,89 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+button{
+  padding: 10px;
+  background-color: rgb(19, 156, 49);
+  color: aliceblue;
+  border-radius: 10px;
+}
+button:hover {
+  padding: 10px;
+  background-color: rgb(19, 156, 49);
+  color: aliceblue;
+  border-radius: 10px;
+
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  align-items: center;
+}
+header {
+  background-color: #212529;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color:rgb(19, 156, 49);
+  padding: 10px;
+  border-radius: 10px;
+  
+}
+.hero {
+  display: flex;
+  padding: 30px;
+  gap: 30px;
+  background-color: #f8f9fa;
+  flex-wrap: wrap;
+}
+.slider {
+  flex: 2;
+  position: relative;
+}
+.slider img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.Create{
+  flex: 1;
+  background: rgb(233, 222, 222);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ccc;
+}
+.Create h3 {
+  margin-bottom: 15px;
+}
+.Create  input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+.Create label {
+  display: block;
+  margin: 10px 0;
+}
+.Create button {
+  background-color: rgb(19, 156, 49);
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+.choose-us why-us{
+  display: flex;
+  align-items: center;  
+}
