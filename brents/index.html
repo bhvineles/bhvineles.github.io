@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Monthsarry Nova Mae</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ffeaea 0%, #f4d4fc 50%, #d4f0fc 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .card {
+            max-width: 800px;
+            width: 90%;
+            background: #fff;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .header {
+            font-size: 2.5rem;
+            color: #d32f6b;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: #7b1fa2;
+            margin-bottom: 30px;
+        }
+
+        .flowers {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .flower-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .flower-img:hover {
+            transform: scale(1.1);
+        }
+
+        .kiss {
+            margin: 30px 0;
+        }
+
+        .kiss-img {
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .message {
+            font-size: 1.2rem;
+            color: #333;
+            line-height: 1.6;
+            margin: 20px 0;
+            padding: 0 10px;
+        }
+
+        .signature {
+            font-style: italic;
+            color: #888;
+            margin-top: 40px;
+        }
+
+        /* Animations */
+        @keyframes bloom {
+            0% { opacity: 0; transform: scale(0); }
+            50% { opacity: 0.5; transform: scale(1.2); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        .flower-img {
+            animation: bloom 2s ease-in-out;
+        }
+
+        @keyframes kiss-glow {
+            0%, 100% { filter: brightness(1); }
+            50% { filter: brightness(1.2) hue-rotate(45deg); }
+        }
+
+        .kiss-img {
+            animation: kiss-glow 3s infinite ease-in-out;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .header { font-size: 2rem; }
+            .subtitle { font-size: 1.2rem; }
+            .flower-img { width: 120px; height: 120px; }
+            .kiss-img { width: 150px; height: 120px; }
+        }
+
+        /* Fallback for images */
+        img {
+            background-color: #f0f0f0;
+        }
+        img:onerror {
+            content: "Image failed to load";
+            display: block;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">Happy Monthsarry Nova Mae!</div>
+        <div class="subtitle">Celebrating Our Beautiful Journey Together! char uy</div>
+        <div class="flowers">
+            <img class="flower-img" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d693decc-001b-4d76-baf1-c143b5bc5dfc.png" alt="Vibrant bouquet of red roses with thorny stems and green leaves, petals unfurling in a blossoming animation against a soft pink and white gradient background" />
+            <img class="flower-img" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3b12f745-f2c6-4939-aef3-82a38a874b19.png" alt="Elegant pink tulips in full bloom with smooth petals and white centers, arranged in a decorative vase with water droplets on colorful backgrounds" />
+            <img class="flower-img" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/88e7127b-0238-4fb9-8331-28eef09ba621.png" alt="Delicate white lilies with yellow centers and green stamens, gently blooming in a serene floral arrangement with misty dew and subtle shadows" />
+        </div>
+        <div class="kiss">
+            <img class="kiss-img" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c428ef0d-aef7-43d5-b5d8-a367c21e0bfc.png" alt="Romantic illustration of two soft, red lips pressed together in a passionate kiss, encircled by floating pink hearts and golden sparkles in a dreamy, animated style with soft lighting and gradient hues" />
+        </div>
+        <div class="message">
+            Dli na mag sige ug isog2 kay makaboang na!
+        </div>
+        <div class="signature">
+            From handsome boyfriend,<br>
+            brents
+        </div>
+    </div>
+
+    <script>
+        // Add simple JS for unique touch: Make flowers "float" slightly on hover with random movement
+        document.querySelectorAll('.flower-img').forEach(flower => {
+            flower.addEventListener('mouseover', () => {
+                flower.style.transform = `scale(1.1) rotate(${Math.random() * 10 - 5}deg)`;
+                setTimeout(() => {
+                    flower.style.transform = 'scale(1) rotate(0deg)';
+                }, 500);
+            });
+        });
+
+        // Interactive kiss: On click, add a brief glow effect
+        const kissImg = document.querySelector('.kiss-img');
+        kissImg.addEventListener('click', () => {
+            kissImg.style.filter = 'brightness(1.5) hue-rotate(90deg)';
+            setTimeout(() => {
+                kissImg.style.filter = 'brightness(1)';
+            }, 1000);
+        });
+
+        // Optional: Randomize flower animation delays for uniqueness
+        document.querySelectorAll('.flower-img').forEach((flower, index) => {
+            flower.style.animationDelay = `${index * 0.5}s`;
+        });
+    </script>
+</body>
+</html>
+</content>
+</create_file>
