@@ -1,3 +1,47 @@
-.officials{
+.officials {
     justify-content: space-between;
+}
+
+/* Additional styles for consistency */
+.hero {
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.attr {
+    color: #0d6efd;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.another {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+.developer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.developer-card {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .developer-grid {
+    grid-template-columns: 1fr;
+  }
 }
